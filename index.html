@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio - Mahasiswa Computer Science Binus University, fokus Hardware & Internet of Things (IoT)." />
+  <title>Marsianus William Christantio — Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">&lt;Marsianus/&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Tentang</a>
+        <a href="#education">Studi</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Marsianus William Christantio</h1>
+        <h2 class="hero-role">Mahasiswa Computer Science · Hardware &amp; IoT Enthusiast</h2>
+        <p class="hero-desc">
+          Mahasiswa Computer Science di Binus University yang tertarik pada dunia
+          hardware dan Internet of Things. Senang merancang, merangkai, dan memprogram
+          perangkat pintar — dari sensor sederhana sampai sistem terhubung.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="profile.jpg" alt="Foto Marsianus William Christantio"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="hero-photo-fallback">MW</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Saya seorang mahasiswa berusia 20 tahun, jurusan Computer Science di
+            Binus University, saat ini sedang menempuh semester 5. Pada semester 6 dan 7
+            saya akan menjalani program magang (Enrichment Program) di bidang teknis,
+            dengan fokus pada <strong>hardware</strong> dan <strong>Internet of Things (IoT)</strong>.
+          </p>
+          <p>
+            Saya senang mengerjakan hal yang menggabungkan perangkat keras dan perangkat lunak —
+            memprogram mikrokontroler, membaca data sensor, dan membuat perangkat saling terhubung.
+            Tujuan saya adalah berkembang sebagai <strong>technical engineer</strong> di bidang IoT.
+          </p>
+        </div>
+        <ul class="about-facts">
+          <li><span>🎓</span> Binus University — Computer Science</li>
+          <li><span>📅</span> Semester 5 (magang di semester 6 &amp; 7)</li>
+          <li><span>🔧</span> Fokus: Hardware &amp; IoT</li>
+          <li><span>🎯</span> Peran: Technical / IoT Engineer</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Perjalanan Studi ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Perjalanan Studi</h2>
+      <p class="section-subtitle">
+        Klik tiap jenjang untuk melihat karya dan pengalaman organisasi.
+      </p>
+      <div class="timeline">
+
+        <!-- SD -->
+        <div class="edu-item">
+          <button class="edu-header" aria-expanded="false">
+            <div class="edu-dot"></div>
+            <div class="edu-head-text">
+              <span class="edu-level">Sekolah Dasar (SD)</span>
+              <span class="edu-school">SD Subsidi Pahauman · 2012 – 2018</span>
+            </div>
+            <span class="edu-arrow">▾</span>
+          </button>
+          <div class="edu-body">
+            <div class="edu-body-inner">
+              <h4>🏆 Karya &amp; Prestasi</h4>
+              <ul>
+                <li>Contoh: Juara lomba menggambar tingkat sekolah.</li>
+              </ul>
+              <h4>👥 Organisasi &amp; Kegiatan</h4>
+              <ul>
+                <li>Contoh: Anggota Pramuka.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMP -->
+        <div class="edu-item">
+          <button class="edu-header" aria-expanded="false">
+            <div class="edu-dot"></div>
+            <div class="edu-head-text">
+              <span class="edu-level">Sekolah Menengah Pertama (SMP)</span>
+              <span class="edu-school">SMP Kristen Makedonia · 2018 – 2021</span>
+            </div>
+            <span class="edu-arrow">▾</span>
+          </button>
+          <div class="edu-body">
+            <div class="edu-body-inner">
+              <h4>🏆 Karya &amp; Prestasi</h4>
+              <ul>
+                <li>Contoh: Proyek prakarya elektronika sederhana.</li>
+              </ul>
+              <h4>👥 Organisasi &amp; Kegiatan</h4>
+              <ul>
+                <li>Contoh: Anggota OSIS / ekstrakurikuler.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMA -->
+        <div class="edu-item">
+          <button class="edu-header" aria-expanded="false">
+            <div class="edu-dot"></div>
+            <div class="edu-head-text">
+              <span class="edu-level">Sekolah Menengah Atas (SMA)</span>
+              <span class="edu-school">SMA Santo Paulus Pontianak · 2021 – 2024</span>
+            </div>
+            <span class="edu-arrow">▾</span>
+          </button>
+          <div class="edu-body">
+            <div class="edu-body-inner">
+              <h4>🏆 Karya &amp; Prestasi</h4>
+              <ul>
+                <li>Contoh: Proyek robotik / mikrokontroler pertama.</li>
+              </ul>
+              <h4>👥 Organisasi &amp; Kegiatan</h4>
+              <ul>
+                <li>Contoh: Pengurus klub sains / robotik.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliah -->
+        <div class="edu-item">
+          <button class="edu-header" aria-expanded="false">
+            <div class="edu-dot edu-dot-active"></div>
+            <div class="edu-head-text">
+              <span class="edu-level">Kuliah — Computer Science</span>
+              <span class="edu-school">Bina Nusantara University · 2024 – Sekarang (Semester 5)</span>
+            </div>
+            <span class="edu-arrow">▾</span>
+          </button>
+          <div class="edu-body">
+            <div class="edu-body-inner">
+              <h4>🏆 Karya &amp; Proyek</h4>
+              <ul>
+                <li>Contoh: Proyek IoT smart home berbasis ESP32.</li>
+                <li>Contoh: Sistem absensi RFID.</li>
+              </ul>
+              <h4>👥 Organisasi &amp; Kegiatan</h4>
+              <ul>
+                <li>Contoh: Anggota komunitas / UKM teknologi kampus.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Keahlian</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>🔌 Hardware</h3>
+          <ul>
+            <li>Arduino / ESP32 / ESP8266</li>
+            <li>Raspberry Pi</li>
+            <li>Sensor &amp; aktuator</li>
+            <li>Breadboarding &amp; wiring</li>
+            <li>Dasar elektronika</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>💻 Software</h3>
+          <ul>
+            <li>C / C++ (embedded)</li>
+            <li>Python</li>
+            <li>Dasar Web (HTML, CSS, JS)</li>
+            <li>Protokol: I2C, SPI, UART, MQTT</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>🛠️ Tools</h3>
+          <ul>
+            <li>Arduino IDE / PlatformIO</li>
+            <li>VS Code</li>
+            <li>Fritzing / Wokwi</li>
+            <li>Multimeter</li>
+            <li>Node-RED (dasar)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Proyek</h2>
+      <p class="section-subtitle">
+        Beberapa proyek contoh. Ganti dengan proyek asli kamu dan tautkan ke repo GitHub.
+      </p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-tag">IoT</div>
+          <h3>Smart Home Monitoring</h3>
+          <p>
+            Sistem pemantau suhu dan kelembapan berbasis ESP32 yang mengirim data
+            ke dashboard secara real-time lewat MQTT.
+          </p>
+          <div class="project-stack">
+            <span>ESP32</span><span>DHT22</span><span>MQTT</span>
+          </div>
+          <a href="#" class="project-link">Lihat di GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Hardware</div>
+          <h3>Automatic Plant Watering</h3>
+          <p>
+            Alat penyiram tanaman otomatis dengan sensor kelembapan tanah dan pompa,
+            dikontrol oleh Arduino.
+          </p>
+          <div class="project-stack">
+            <span>Arduino</span><span>Soil Sensor</span><span>Relay</span>
+          </div>
+          <a href="#" class="project-link">Lihat di GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">IoT</div>
+          <h3>RFID Attendance System</h3>
+          <p>
+            Sistem absensi menggunakan RFID yang mencatat kehadiran ke database
+            dan menampilkannya di web sederhana.
+          </p>
+          <div class="project-stack">
+            <span>RC522</span><span>ESP8266</span><span>Python</span>
+          </div>
+          <a href="#" class="project-link">Lihat di GitHub →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container contact-inner">
+      <h2 class="section-title">Kontak</h2>
+      <p>Tertarik berkolaborasi atau ngobrol soal proyek IoT? Hubungi saya:</p>
+      <div class="contact-links">
+        <a href="mailto:marsinuswilliam@gmail.com" class="btn btn-primary">📧 Email</a>
+        <a href="mailto:marsianus.christantio@binus.ac.id" class="btn btn-ghost">🎓 Email Binus</a>
+        <a href="https://wa.me/6289512543536?text=Halo%20Marsianus%20William%20Christantio%2C%20saya%20melihat%20portofolio%20kamu" target="_blank" rel="noopener" class="btn btn-ghost">💬 Chat WhatsApp</a>
+        <a href="https://www.instagram.com/mrsnuscrtho_06" target="_blank" rel="noopener" class="btn btn-ghost">📷 Instagram</a>
+        <a href="https://www.facebook.com/share/14pALtJALSo/" target="_blank" rel="noopener" class="btn btn-ghost">👤 Facebook</a>
+        <a href="https://github.com/username-kamu" target="_blank" rel="noopener" class="btn btn-ghost">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/marsianus-william-b067b9272" target="_blank" rel="noopener" class="btn btn-ghost">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Marsianus William Christantio · Dibuat dengan HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
