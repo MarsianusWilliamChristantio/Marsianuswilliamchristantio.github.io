@@ -299,10 +299,11 @@ a {
 
 /* ===== Skills ===== */
 .skill-group-title {
-  display: inline-flex;
+  display: flex;
+  width: fit-content; /* lebar menyesuaikan teks, tapi tetap turun ke baris baru */
   align-items: center;
   gap: 8px;
-  margin-top: 36px;
+  margin-top: 40px;
   margin-bottom: 4px;
   font-size: 1.15rem;
   font-weight: 600;
@@ -313,15 +314,24 @@ a {
   border: 1px solid var(--border);
 }
 
+/* Label kelompok pertama (Hard Skill) menempel di bawah judul "Keahlian" */
+.section-title + .skill-group-title {
+  margin-top: 20px;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr; /* semua kartu tinggi sama */
   gap: 24px;
   margin-top: 20px;
 }
 
 .skill-card {
   padding: 26px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: transform 0.2s, border-color 0.2s, box-shadow 0.25s;
 }
 

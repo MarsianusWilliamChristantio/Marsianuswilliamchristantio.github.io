@@ -1,15 +1,38 @@
 FOLDER FILE PENDUKUNG
 =====================
 
-Taruh semua sertifikat, foto kegiatan, atau file pendukung prestasi di folder ini.
+1. CV (WAJIB untuk tombol "Download CV")
+----------------------------------------
+Simpan CV kamu di folder ini dengan nama PERSIS:
+
+    CV-Marsianus-William-Christantio.pdf
+
+Kalau namanya beda, tombol "Download CV" di website tidak akan berfungsi.
+(Atau ubah nama file di index.html pada bagian href="files/...")
+
+
+2. SERTIFIKAT & FOTO PENDUKUNG
+------------------------------
+Taruh sertifikat atau foto kegiatan di folder ini juga.
 
 Contoh:
-  files/sertifikat-lomba-iot.pdf
-  files/foto-juara.jpg
+    files/sertifikat-osnk-2023.pdf
+    files/foto-kihajar-2023.jpg
 
-Lalu di index.html, pada bagian prestasi terkait, arahkan tombol file ke nama
-file itu. Contoh:
+Lalu di index.html, pada tombol prestasi terkait, isi atribut data-files
+dengan format:  Label|url ; Label|url
 
-  <a href="files/sertifikat-lomba-iot.pdf" target="_blank" rel="noopener" class="file-chip">Sertifikat (PDF)</a>
+Contoh:
+    data-files="📄 Sertifikat|files/sertifikat-osnk-2023.pdf ; 🖼️ Foto|files/foto-kihajar-2023.jpg"
+
+
+3. CATATAN PENTING SOAL PRIVASI
+-------------------------------
+Repo GitHub kamu bersifat PUBLIC, jadi semua file di folder ini bisa
+diunduh siapa saja. Sebelum upload, sensor dulu data sensitif seperti:
+  - Nomor induk (NISN / NIM) dan nomor sertifikat
+  - Tanggal lahir dan alamat rumah
+  - Tanda tangan
+  - QR code / kode verifikasi
 
 Format yang didukung browser: PDF, JPG, PNG, GIF, WEBP.
