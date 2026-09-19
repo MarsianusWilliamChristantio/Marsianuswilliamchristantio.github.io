@@ -1,0 +1,15 @@
+FOLDER FILE PENDUKUNG
+=====================
+
+Taruh semua sertifikat, foto kegiatan, atau file pendukung prestasi di folder ini.
+
+Contoh:
+  files/sertifikat-lomba-iot.pdf
+  files/foto-juara.jpg
+
+Lalu di index.html, pada bagian prestasi terkait, arahkan tombol file ke nama
+file itu. Contoh:
+
+  <a href="files/sertifikat-lomba-iot.pdf" target="_blank" rel="noopener" class="file-chip">Sertifikat (PDF)</a>
+
+Format yang didukung browser: PDF, JPG, PNG, GIF, WEBP.

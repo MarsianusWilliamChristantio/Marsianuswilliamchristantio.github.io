@@ -101,13 +101,17 @@
           <div class="edu-body">
             <div class="edu-body-inner">
               <h4>🏆 Karya &amp; Prestasi</h4>
-              <ul>
-                <li>Contoh: Juara lomba menggambar tingkat sekolah.</li>
-              </ul>
+              <p class="edu-empty">–</p>
+
               <h4>👥 Organisasi &amp; Kegiatan</h4>
-              <ul>
-                <li>Contoh: Anggota Pramuka.</li>
-              </ul>
+
+              <button class="achievement-trigger"
+                data-title="Lomba Peraturan Baris Berbaris (PBB)"
+                data-tanggal="Peringatan Hari Kemerdekaan RI (17 Agustus)"
+                data-tahun="–"
+                data-keterangan="Mengikuti Lomba Peraturan Baris Berbaris (PBB) dalam rangka memperingati Hari Kemerdekaan Republik Indonesia.">
+                Lomba Peraturan Baris Berbaris (PBB)
+              </button>
             </div>
           </div>
         </div>
@@ -126,11 +130,11 @@
             <div class="edu-body-inner">
               <h4>🏆 Karya &amp; Prestasi</h4>
               <ul>
-                <li>Contoh: Proyek prakarya elektronika sederhana.</li>
+                <li>–</li>
               </ul>
               <h4>👥 Organisasi &amp; Kegiatan</h4>
               <ul>
-                <li>Contoh: Anggota OSIS / ekstrakurikuler.</li>
+                <li>–</li>
               </ul>
             </div>
           </div>
@@ -149,13 +153,25 @@
           <div class="edu-body">
             <div class="edu-body-inner">
               <h4>🏆 Karya &amp; Prestasi</h4>
-              <ul>
-                <li>Contoh: Proyek robotik / mikrokontroler pertama.</li>
-              </ul>
+
+              <button class="achievement-trigger"
+                data-title="Olimpiade Sains Nasional Tingkat Kabupaten (OSN-K)"
+                data-tanggal="4 – 6 Mei 2023"
+                data-tahun="2023"
+                data-keterangan="Mengikuti Olimpiade Sains Nasional tingkat Kabupaten (OSN-K) sebagai perwakilan sekolah.">
+                Olimpiade Sains Nasional Tingkat Kabupaten (OSN-K) 2023
+              </button>
+
+              <button class="achievement-trigger"
+                data-title="Kihajar STEM 2023 — Tahap Intermediate"
+                data-tanggal="26 Agustus 2023"
+                data-tahun="2023"
+                data-keterangan="Mengikuti Lomba Kita Harus Belajar (Kihajar) STEM Tahun 2023, Tahap Intermediate, tingkat Provinsi Kalimantan Barat.">
+                Kihajar STEM 2023 — Tahap Intermediate (Prov. Kalimantan Barat)
+              </button>
+
               <h4>👥 Organisasi &amp; Kegiatan</h4>
-              <ul>
-                <li>Contoh: Pengurus klub sains / robotik.</li>
-              </ul>
+              <p class="edu-empty">–</p>
             </div>
           </div>
         </div>
@@ -172,15 +188,21 @@
           </button>
           <div class="edu-body">
             <div class="edu-body-inner">
-              <h4>🏆 Karya &amp; Proyek</h4>
-              <ul>
-                <li>Contoh: Proyek IoT smart home berbasis ESP32.</li>
-                <li>Contoh: Sistem absensi RFID.</li>
-              </ul>
+              <h4>🏆 Karya &amp; Prestasi</h4>
+
+              <!-- CONTOH item. Duplikat tombol .achievement-trigger ini untuk item lain.
+                   Untuk file pendukung, isi data-files dengan format: Label|url ; Label|url -->
+              <button class="achievement-trigger"
+                data-title="Contoh: Juara 2 Lomba IoT Nasional"
+                data-tanggal="Sabtu, 15 Maret 2025"
+                data-tahun="2025"
+                data-keterangan="Ganti dengan deskripsi singkat prestasi ini — penyelenggara, tingkat lomba, dan pencapaianmu."
+                data-files="📄 Sertifikat (PDF)|files/contoh-sertifikat.pdf ; 🖼️ Foto Kegiatan|files/contoh-foto.jpg">
+                Contoh: Juara 2 Lomba IoT Nasional
+              </button>
+
               <h4>👥 Organisasi &amp; Kegiatan</h4>
-              <ul>
-                <li>Contoh: Anggota komunitas / UKM teknologi kampus.</li>
-              </ul>
+              <p class="edu-empty">–</p>
             </div>
           </div>
         </div>
@@ -300,6 +322,15 @@
       <p>© <span id="year"></span> Marsianus William Christantio · Dibuat dengan HTML, CSS &amp; JavaScript</p>
     </div>
   </footer>
+
+  <!-- ===== Modal Pop Up Detail ===== -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">&times;</button>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
